@@ -5,6 +5,10 @@ body {
   padding: 0;
   color: #333;
   align-items: center;
+
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
 }
   
 /* Modo oscuro */
