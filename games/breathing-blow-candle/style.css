@@ -17,6 +17,10 @@ body.dark-mode {
   color: white;
 }
   
+main{
+  min-height: 100dvh;
+}
+
 .game-container {
   display: flex;
   flex-direction: column;
