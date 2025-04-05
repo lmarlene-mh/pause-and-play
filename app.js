@@ -73,3 +73,14 @@ if ('Notification' in window && Notification.permission !== 'denied') {
       }
   });
 }
+
+let notification
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") {
+    notification = new Notification ("¡Regresa, por favor!", {
+      body: "por favooooor"
+    }) 
+  }else{
+    notification.close()
+  }
+})
