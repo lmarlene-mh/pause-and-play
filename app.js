@@ -45,7 +45,7 @@ if ('Notification' in window && Notification.permission !== 'denied') {
           morningNotification.setHours(10, 0, 0); // 10:00 am
 
           const afternoonNotification = new Date(now);
-          afternoonNotification.setHours(17, 0, 0); // 5:00 pm
+          afternoonNotification.setHours(17, 25, 0); // 5:00 pm
 
           // Calcular el tiempo en milisegundos hasta las notificaciones
           const morningDelay = morningNotification - now;
