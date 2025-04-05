@@ -81,6 +81,6 @@ document.addEventListener("visibilitychange", () => {
       body: "por favooooor"
     }) 
   }else{
-    notification.close()
+    if (notification) notification.close()
   }
 })
