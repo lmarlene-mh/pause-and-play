@@ -20,6 +20,15 @@ self.addEventListener("install", event => {
     );
   });
 
+self.addEventListener('install', event => {
+  console.log('✅ Service Worker instalado');
+  self.skipWaiting(); // Para activar el SW inmediatamente
+});
+
+self.addEventListener('activate', event => {
+  console.log('✅ Service Worker activado');
+});
+
 //notificaciones programadas
   self.addEventListener('notificationclick', event => {
   event.notification.close();
@@ -36,11 +45,3 @@ self.addEventListener("install", event => {
   }
 });
 
-self.addEventListener('install', event => {
-  console.log('✅ Service Worker instalado');
-  self.skipWaiting(); // Para activar el SW inmediatamente
-});
-
-self.addEventListener('activate', event => {
-  console.log('✅ Service Worker activado');
-});
